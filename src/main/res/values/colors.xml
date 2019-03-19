@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2017 to Adam van der Kruk (Zehavi) AKA TacB0sS - Nu-Art Software
+  ~
+  ~ This software code is not an 'Open Source'!
+  ~ In order to use this code you MUST have a proper license.
+  ~ In order to obtain a licence please contact me directly.
+  ~
+  ~ Email: Adam.Zehavi@Nu-Art-Software.com
+  -->
+
+<resources>
+    <color name="Green">#00cc00</color>
+    <color name="Red">#cc0000</color>
+    <color name="Blue">#0000cc</color>
+    <color name="Gray">#aaaaaa</color>
+    <color name="Purple">#cc00ff</color>
+    <color name="Cyan">#ccffff</color>
+    <color name="Yellow">#ffff00</color>
+</resources>
