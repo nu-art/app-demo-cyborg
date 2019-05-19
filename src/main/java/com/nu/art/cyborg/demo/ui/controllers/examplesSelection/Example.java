@@ -36,6 +36,7 @@ import com.nu.art.cyborg.demo.ui.controllers.Controller_ViewPager;
 import com.nu.art.cyborg.demo.ui.controllers.customAttributeExample.ControllerV1_CustomAttribute;
 import com.nu.art.cyborg.demo.ui.controllers.dynamicStackExample.Controller_DynamicStack;
 import com.nu.art.cyborg.demo.ui.controllers.injection.ControllerV1_Injection;
+import com.nu.art.cyborg.demo.ui.controllers.liveModule.Controller_LiveModule;
 import com.nu.art.cyborg.demo.ui.controllers.servicesTypeHandling.ControllerV1_ServicesHandling;
 import com.nu.art.cyborg.demo.ui.controllers.transitionAnimation.ControllerV1_TransitionAnimationBegin;
 import com.nu.art.cyborg.logcat.ui.Controller_LogcatViewer;
@@ -44,6 +45,7 @@ import com.nu.art.cyborg.logcat.ui.Controller_LogcatViewer;
  * A list of examples and their layouts provided in this demo project.
  */
 public enum Example {
+	LiveModule(R.string.ExampleLabel_LiveModule, Controller_LiveModule.class),
 	Material(R.string.ExampleLabel_Material, Controller_Material.class),
 	ViewPager(R.string.ExampleLabel_ViewPager, Controller_ViewPager.class),
 	InternetConnectivity(R.string.ExampleLabel_InternetConnectivity, ControllerV1_InternetConnection.class),
