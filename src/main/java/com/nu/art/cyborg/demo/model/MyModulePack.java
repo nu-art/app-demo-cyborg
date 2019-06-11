@@ -10,17 +10,11 @@
 
 package com.nu.art.cyborg.demo.model;
 
-import com.google.auth.oauth2.GoogleCredentials;
 import com.nu.art.belog.BeLogged;
-import com.nu.art.belog.FileLoggerClient;
-import com.nu.art.core.exceptions.runtime.BadImplementationException;
-import com.nu.art.core.interfaces.Getter;
+import com.nu.art.belog.loggers.FileLogger;
 import com.nu.art.core.tools.SizeTools;
 import com.nu.art.cyborg.automation.AutomationModule;
 import com.nu.art.cyborg.core.CyborgBuilder;
-import com.nu.art.cyborg.core.CyborgStackController;
-import com.nu.art.cyborg.core.ItemRenderer;
-import com.nu.art.cyborg.core.abs._DebugFlags;
 import com.nu.art.cyborg.core.modules.ABTestingModule;
 import com.nu.art.cyborg.demo.ui.controllers.servicesTypeHandling.ServicesModule;
 import com.nu.art.cyborg.logcat.Module_LogcatViewer;
@@ -38,8 +32,6 @@ import com.nu.art.http.HttpModule;
 import com.nu.art.modular.core.ModulesPack;
 
 import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
 
 /**
  * Created by TacB0sS on 18-Apr 2015.
@@ -47,10 +39,6 @@ import java.io.InputStream;
 @SuppressWarnings("unchecked")
 public class MyModulePack
 	extends ModulesPack {
-
-	private static final long MAX_LOG_FILE_SIZE_IN_BYTES = 4 * SizeTools.MegaByte;
-
-	private static final int MAX_LOG_FILES = 20;
 
 	private static final Class[] Modules = {
 		InternetConnectivityModule.class,
@@ -83,10 +71,6 @@ public class MyModulePack
 		//		CyborgStackController.DebugFlag.enable();
 		//		getModule(CyborgAudioRecorder.class).DebugFlag.enable();
 		//		getModule(AutomationModule.class).DebugFlag.enable();
-
-		FileLoggerClient logClient = new FileLoggerClient();
-		logClient.set(new File(CyborgBuilder.getInstance().getApplicationContext().getFilesDir(), "logs"), "debug-log", MAX_LOG_FILE_SIZE_IN_BYTES, MAX_LOG_FILES);
-		BeLogged.getInstance().addClient(logClient);
 
 		// You can get any module declared in the constructor and PRE-CONFIGURE it before it is initialized.
 		getModule(MyModule.class).addString("0");
