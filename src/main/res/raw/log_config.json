@@ -1,0 +1,46 @@
+{
+  "configs": [
+    {
+      "count": 10,
+      "folder": "${downloads}/logs/logcat",
+      "fileName": "logcat.txt",
+      "size": 9000,
+      "key": "LogcatLogger",
+      "type": "LogcatLogger"
+    },
+    {
+      "key": "AndroidLogger",
+      "type": "AndroidLogger"
+    },
+    {
+      "count": 10,
+      "size": 5242880,
+      "folder": "${downloads}/logs/file-logger",
+      "fileName": "file-logger",
+      "key": "FileLogger",
+      "type": "FileLogger"
+    },
+    {
+      "count": 10,
+      "size": 5242880,
+      "folder": "${downloads}/logs/main",
+      "fileName": "main-thread-logger",
+      "key": "MainThreadLogger",
+      "type": "FileLogger"
+    }
+  ],
+  "rules": [
+    {
+      "loggerKeys": [
+        "AndroidLogger",
+        "FileLogger"
+      ]
+    },
+    {
+      "loggerKeys": [
+        "MainThreadLogger"
+      ],
+      "thread": "main|background"
+    }
+  ]
+}
