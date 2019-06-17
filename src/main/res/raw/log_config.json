@@ -9,6 +9,7 @@
       "type": "LogcatToFileLogger"
     },
     {
+      "isDefault": true,
       "key": "android-logger",
       "type": "AndroidLogger"
     },
@@ -17,6 +18,7 @@
       "size": 8096000,
       "folder": "${downloads}/logs/file-logger",
       "fileName": "file-logger",
+      "isDefault": true,
       "key": "file-logger",
       "type": "FileLogger"
     },
@@ -31,10 +33,10 @@
   ],
   "rules": [
     {
-      "loggerKeys": [
-        "android-logger",
-        "file-logger"
-      ]
+      "minLevel": "Verbose"
+    },
+    {
+      "minLevel": "Debug"
     },
     {
       "loggerKeys": [
