@@ -39,7 +39,7 @@ public class ControllerV1_ExamplesSelection
 	private CyborgRecycler recycler;
 
 	private ControllerV1_ExamplesSelection() {
-		super(R.layout.v1_controller__examples_selection);
+		super(R.layout.controller__examples_selection);
 	}
 
 	@Override

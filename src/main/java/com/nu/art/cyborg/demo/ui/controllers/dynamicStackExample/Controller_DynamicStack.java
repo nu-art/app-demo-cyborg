@@ -78,7 +78,7 @@ public class Controller_DynamicStack
 	private Transition selectedAnimation;
 
 	public Controller_DynamicStack() {
-		super(R.layout.v1_controller__stack_example);
+		super(R.layout.controller__stack_example);
 	}
 
 	@Override

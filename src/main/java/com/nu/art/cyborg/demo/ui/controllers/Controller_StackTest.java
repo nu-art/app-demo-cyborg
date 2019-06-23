@@ -40,7 +40,7 @@ public class Controller_StackTest
 		private TextView label;
 
 		public Controller_StackItem() {
-			super(R.layout.v1_controller__dynamic_a);
+			super(R.layout.controller__dynamic_a);
 		}
 
 		void setLabel(String label) {

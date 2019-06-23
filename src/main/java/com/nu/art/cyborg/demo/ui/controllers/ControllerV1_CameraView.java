@@ -52,7 +52,7 @@ public class ControllerV1_CameraView
 	private TextView toggleCamera;
 
 	public ControllerV1_CameraView() {
-		super(R.layout.v1_controller__camera_view);
+		super(R.layout.controller__camera_view);
 	}
 
 	@Override

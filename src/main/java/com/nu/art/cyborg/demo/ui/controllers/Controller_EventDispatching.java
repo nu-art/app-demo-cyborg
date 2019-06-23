@@ -11,6 +11,6 @@ public class Controller_EventDispatching
 	extends CyborgController {
 
 	public Controller_EventDispatching() {
-		super(R.layout.v1_activity__event_dispatching_example);
+		super(R.layout.controller__event_dispatching_example);
 	}
 }

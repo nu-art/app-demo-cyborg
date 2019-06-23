@@ -44,7 +44,7 @@ public class ControllerV1_Storage
 	MyStorageModule myStorage;
 
 	private ControllerV1_Storage() {
-		super(R.layout.v1_controller__storage_example);
+		super(R.layout.controller__storage_example);
 	}
 
 	@Override

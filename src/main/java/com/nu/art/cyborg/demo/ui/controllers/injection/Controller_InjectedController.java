@@ -24,6 +24,6 @@ public class Controller_InjectedController
 	extends CyborgController {
 
 	private Controller_InjectedController() {
-		super(R.layout.v1_controller__injected_controller);
+		super(R.layout.controller__injected_controller);
 	}
 }

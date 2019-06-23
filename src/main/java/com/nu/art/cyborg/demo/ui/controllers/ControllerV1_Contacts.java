@@ -55,7 +55,7 @@ public class ControllerV1_Contacts
 	private String query = "";
 
 	private ControllerV1_Contacts() {
-		super(R.layout.v1_controller__contacts);
+		super(R.layout.controller__contacts);
 	}
 
 	@Override

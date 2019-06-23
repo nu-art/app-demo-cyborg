@@ -86,7 +86,7 @@ public class ControllerV1_ServicesHandling
 	private CyborgAdapter<ServiceConnection> connectionsAdapter;
 
 	public ControllerV1_ServicesHandling() {
-		super(R.layout.v1_controller__service_handling);
+		super(R.layout.controller__service_handling);
 	}
 
 	@Override

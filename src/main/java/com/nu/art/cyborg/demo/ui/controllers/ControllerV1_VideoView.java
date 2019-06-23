@@ -30,7 +30,7 @@ public class ControllerV1_VideoView
 	private VideoView videoView;
 
 	public ControllerV1_VideoView() {
-		super(R.layout.v1_controller__video_view);
+		super(R.layout.controller__video_view);
 	}
 
 	@Override

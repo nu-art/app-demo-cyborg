@@ -26,6 +26,6 @@ public class ControllerV1_RoundedImage
 	private RoundedImageView imageView;
 
 	public ControllerV1_RoundedImage() {
-		super(R.layout.v1_controller__rounded_image_view);
+		super(R.layout.controller__rounded_image_view);
 	}
 }

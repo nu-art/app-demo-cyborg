@@ -31,7 +31,7 @@ public class ControllerV1_ABTesting
 	private TextView changeTV;
 
 	public ControllerV1_ABTesting() {
-		super(R.layout.v1_controller__ab_testing_view);
+		super(R.layout.controller__ab_testing_view);
 	}
 
 	private static Integer[] colors = {

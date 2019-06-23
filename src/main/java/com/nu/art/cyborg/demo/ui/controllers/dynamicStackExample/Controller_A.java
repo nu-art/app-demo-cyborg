@@ -19,6 +19,6 @@ public class Controller_A
 	extends CyborgController {
 
 	public Controller_A() {
-		super(R.layout.v1_controller__dynamic_a);
+		super(R.layout.controller__dynamic_a);
 	}
 }

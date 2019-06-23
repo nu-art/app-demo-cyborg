@@ -41,7 +41,7 @@ public class ControllerV1_NativeCalls
 	private NativeCallsModule callsModule;
 
 	private ControllerV1_NativeCalls() {
-		super(R.layout.v1_controller__native_calls);
+		super(R.layout.controller__native_calls);
 	}
 
 	@Override

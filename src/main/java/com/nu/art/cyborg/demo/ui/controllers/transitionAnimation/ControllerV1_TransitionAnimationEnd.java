@@ -38,7 +38,7 @@ public class ControllerV1_TransitionAnimationEnd
 	private RatingBar ratingBar;
 
 	public ControllerV1_TransitionAnimationEnd() {
-		super(R.layout.v1_controller__transition_animation_end_example);
+		super(R.layout.controller__transition_animation_end_example);
 	}
 
 	public RatingBar getRatingBar() {

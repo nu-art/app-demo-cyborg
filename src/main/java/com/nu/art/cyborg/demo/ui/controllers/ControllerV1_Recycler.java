@@ -76,7 +76,7 @@ public class ControllerV1_Recycler
 	private ListDataModel<Number> dataModel;
 
 	private ControllerV1_Recycler() {
-		super(R.layout.v1_controller__recycler_example);
+		super(R.layout.controller__recycler_example);
 	}
 
 	@Override

@@ -40,6 +40,7 @@
     <string name="ExampleLabel_ViewPager">View Pager</string>
     <string name="ExampleLabel_Material">Material</string>
     <string name="ExampleLabel_LiveModule">Live Module</string>
+    <string name="ExampleLabel_FileLogger">File Logger</string>
     <string name="ServiceName_Foreground">Foreground Service</string>
     <string name="ServiceName_Sticky">Sticky Service</string>
     <string name="ExampleLabel_Payment">Payment</string>

@@ -26,7 +26,7 @@ public class ControllerV1_CustomAttribute
 	TextView attributeValue;
 
 	ControllerV1_CustomAttribute() {
-		super(R.layout.v1_controller__custom_attribute);
+		super(R.layout.controller__custom_attribute);
 	}
 
 	@Override

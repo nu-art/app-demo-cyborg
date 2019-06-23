@@ -82,7 +82,7 @@ public class ControllerV1_Injection
 	private MyModule module;
 
 	private ControllerV1_Injection() {
-		super(R.layout.v1_controller__injection_example);
+		super(R.layout.controller__injection_example);
 	}
 
 	@Override

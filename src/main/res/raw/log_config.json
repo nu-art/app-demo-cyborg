@@ -2,7 +2,7 @@
   "configs": [
     {
       "count": 50,
-      "folder": "${downloads}/logs/logcat",
+      "folder": "${downloads}/${appName}/logs/logcat",
       "fileName": "logcat.txt",
       "size": 8096,
       "key": "logcat",
@@ -16,7 +16,7 @@
     {
       "count": 30,
       "size": 8096000,
-      "folder": "${downloads}/logs/file-logger",
+      "folder": "${downloads}/${appName}/logs/file-logger",
       "fileName": "file-logger",
       "isDefault": true,
       "key": "file-logger",
@@ -25,13 +25,27 @@
     {
       "count": 10,
       "size": 8096000,
-      "folder": "${downloads}/logs/main",
+      "folder": "${downloads}/${appName}/logs/main",
       "fileName": "main-thread-logger",
       "key": "main-thread-logger",
+      "type": "FileLogger"
+    },
+    {
+      "count": 30,
+      "size": 8096000,
+      "folder": "${downloads}/${appName}/logs/test",
+      "fileName": "test-file-logger",
+      "key": "test-file-logger",
       "type": "FileLogger"
     }
   ],
   "rules": [
+    {
+      "loggerKeys": [
+        "test-file-logger"
+      ],
+      "minLevel": "Debug"
+    },
     {
       "minLevel": "Verbose"
     },

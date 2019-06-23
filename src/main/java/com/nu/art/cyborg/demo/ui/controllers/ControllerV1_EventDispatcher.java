@@ -46,7 +46,7 @@ public class ControllerV1_EventDispatcher
 	Button dispatchEventButton;
 
 	private ControllerV1_EventDispatcher() {
-		super(R.layout.v1_controller__event_dispatcher_example);
+		super(R.layout.controller__event_dispatcher_example);
 	}
 
 	@Override

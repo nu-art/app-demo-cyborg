@@ -11,7 +11,6 @@
 package com.nu.art.cyborg.demo;
 
 import android.app.Application;
-import android.os.Environment;
 
 import com.nu.art.belog.BeConfig;
 import com.nu.art.belog.BeLogged;
@@ -23,14 +22,9 @@ import com.nu.art.cyborg.core.CyborgBuilder.CyborgConfiguration;
 import com.nu.art.cyborg.core.CyborgController;
 import com.nu.art.cyborg.core.CyborgStackController;
 import com.nu.art.cyborg.core.abs._DebugFlags;
-import com.nu.art.cyborg.core.loggers.AndroidLogger;
 import com.nu.art.cyborg.demo.model.MyModulePack;
 
-import java.io.File;
 import java.io.IOException;
-
-import static com.nu.art.belog.loggers.FileLogger.Config_FastFileLogger;
-import static com.nu.art.belog.loggers.FileLogger.LogConfig_FileLogger;
 
 public class CyborgDemoApplication
 	extends Application {
@@ -47,8 +41,10 @@ public class CyborgDemoApplication
 			@Override
 			public BeConfig get() {
 				try {
+					BeLogged beLogged = BeLogged.getInstance();
+					beLogged.addConfigParam("appName", "cyborg-demo-app");
 					String configAsString = StreamTools.readFullyAsString(getResources().openRawResource(R.raw.log_config));
-					return (BeConfig) BeLogged.getInstance().getSerializer().deserialize(configAsString, BeConfig.class);
+					return (BeConfig) beLogged.getSerializer().deserialize(configAsString, BeConfig.class);
 				} catch (IOException e) {
 					throw new BadImplementationException("Unable to deserialize log config");
 				}
@@ -56,7 +52,7 @@ public class CyborgDemoApplication
 		};
 
 		CyborgBuilder.startCyborg(new CyborgConfiguration(this)
-			                          .setLaunchConfiguration(R.layout.v1_activity__examples_selection)
+			                          .setLaunchConfiguration(R.layout.activity__examples_selection)
 			                          .setModulesPacks(MyModulePack.class)
 			                          .setLogConfig(logConfigLoader));
 	}

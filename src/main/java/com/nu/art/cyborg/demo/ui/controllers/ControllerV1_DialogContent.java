@@ -27,7 +27,7 @@ public class ControllerV1_DialogContent
 	View showDialog;
 
 	public ControllerV1_DialogContent() {
-		super(R.layout.v1_controller__dialog_content);
+		super(R.layout.controller__dialog_content);
 	}
 
 	@Override

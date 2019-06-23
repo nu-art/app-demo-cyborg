@@ -24,7 +24,7 @@ public class Controller_LiveModule
 	static LiveModule module = new LiveModule();
 
 	public Controller_LiveModule() {
-		super(R.layout.v1_controller__dynamic_a);
+		super(R.layout.controller__dynamic_a);
 	}
 
 	@Override

@@ -35,7 +35,7 @@ public class ControllerV1_EventReceiver
 	private TextView textContent;
 
 	public ControllerV1_EventReceiver() {
-		super(R.layout.v1_controller__event_receiver_example);
+		super(R.layout.controller__event_receiver_example);
 	}
 
 	@Override

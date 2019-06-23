@@ -26,6 +26,6 @@ public class ControllerV1_Payment
 	private CreditCardView creditCardView;
 
 	public ControllerV1_Payment() {
-		super(R.layout.v1_controller__payment);
+		super(R.layout.controller__payment);
 	}
 }

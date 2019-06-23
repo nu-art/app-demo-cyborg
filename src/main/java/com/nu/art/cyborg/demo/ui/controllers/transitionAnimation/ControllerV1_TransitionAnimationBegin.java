@@ -41,7 +41,7 @@ public class ControllerV1_TransitionAnimationBegin
 	private RatingBar ratingBar;
 
 	public ControllerV1_TransitionAnimationBegin() {
-		super(R.layout.v1_controller__transition_animation_begin_example);
+		super(R.layout.controller__transition_animation_begin_example);
 	}
 
 	@Override
