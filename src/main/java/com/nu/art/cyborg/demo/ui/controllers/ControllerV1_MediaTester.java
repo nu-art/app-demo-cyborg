@@ -91,7 +91,7 @@ public class ControllerV1_MediaTester
 	}
 
 	@Override
-	public void onItemSelected(AdapterView<?> parentView, View selectedView, int position, long id) {
+	public void onItemSelected(Object selected, AdapterView<?> parentView, View selectedView, int position, long id) {
 		switch (parentView.getId()) {
 			case R.id.SP_Streams:
 				streamsAdapter.invalidateDataModel();
@@ -100,10 +100,7 @@ public class ControllerV1_MediaTester
 			case R.id.SP_Interpolators:
 				interpolatorsAdapter.invalidateDataModel();
 				break;
-			//				stream =
 		}
-
-		super.onItemSelected(parentView, selectedView, position, id);
 	}
 
 	@Override
@@ -111,6 +108,9 @@ public class ControllerV1_MediaTester
 		switch (v.getId()) {
 			case R.id.IV_PlayPause:
 				MediaStream selectedItem = (MediaStream) streams.getSelectedItem();
+				if (selectedItem == null)
+					return;
+
 				tracks.add(new MediaModel(selectedItem, "track-" + (index++)));
 				playersAdapter.invalidateDataModel();
 				break;
@@ -123,12 +123,12 @@ public class ControllerV1_MediaTester
 
 				CyborgMediaPlayer fadeOut = mediaPlayers.get(selectedItems.get(0).key);
 				CyborgMediaPlayer fadeIn = mediaPlayers.get(selectedItems.get(1).key);
-				if (!fadeOut.isAlive()) {
+				if (fadeOut == null || !fadeOut.isAlive()) {
 					toastDebug(selectedItems.get(0).key + " player no alive");
 					return;
 				}
 
-				if (!fadeIn.isAlive()) {
+				if (fadeIn == null || !fadeIn.isAlive()) {
 					toastDebug(selectedItems.get(1).key + " player no alive");
 					return;
 				}
