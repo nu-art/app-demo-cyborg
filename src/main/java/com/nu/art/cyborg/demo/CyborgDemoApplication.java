@@ -43,7 +43,7 @@ public class CyborgDemoApplication
 				try {
 					BeLogged beLogged = BeLogged.getInstance();
 					beLogged.addConfigParam("appName", "cyborg-demo-app");
-					String configAsString = StreamTools.readFullyAsString(getResources().openRawResource(R.raw.log_config));
+					String configAsString = StreamTools.readFullyAsString(getResources().openRawResource(R.raw.log_config_simple));
 					return (BeConfig) beLogged.getSerializer().deserialize(configAsString, BeConfig.class);
 				} catch (IOException e) {
 					throw new BadImplementationException("Unable to deserialize log config");
