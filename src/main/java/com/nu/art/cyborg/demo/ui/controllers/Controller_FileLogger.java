@@ -57,7 +57,11 @@ public class Controller_FileLogger
 
 			case R.id.TV_Rotate:
 				LoggerClient logger = BeLogged.getInstance().getClient("test-file-logger");
-				((FileLogger) logger).rotate();
+				try {
+					((FileLogger) logger).rotate();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
 				break;
 
 			case R.id.TV_LoadNewConfig:

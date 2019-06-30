@@ -15,7 +15,7 @@
     },
     {
       "count": 30,
-      "size": 8096000,
+      "size": 100000,
       "folder": "${downloads}/logs/${appName}/file-logger",
       "fileName": "file-logger",
       "isDefault": true,
