@@ -32,13 +32,16 @@ import com.nu.art.cyborg.demo.ui.controllers.ControllerV1_VideoView;
 import com.nu.art.cyborg.demo.ui.controllers.Controller_AudioRecorder;
 import com.nu.art.cyborg.demo.ui.controllers.Controller_EventDispatching;
 import com.nu.art.cyborg.demo.ui.controllers.Controller_STT;
+import com.nu.art.cyborg.demo.ui.controllers.Controller_ScreenOrientation;
 import com.nu.art.cyborg.demo.ui.controllers.Controller_StackTest;
+import com.nu.art.cyborg.demo.ui.controllers.Controller_SystemVolume;
 import com.nu.art.cyborg.demo.ui.controllers.Controller_ViewPager;
 import com.nu.art.cyborg.demo.ui.controllers.customAttributeExample.ControllerV1_CustomAttribute;
 import com.nu.art.cyborg.demo.ui.controllers.dynamicStackExample.Controller_DynamicStack;
 import com.nu.art.cyborg.demo.ui.controllers.injection.ControllerV1_Injection;
 import com.nu.art.cyborg.demo.ui.controllers.liveModule.Controller_LiveModule;
 import com.nu.art.cyborg.demo.ui.controllers.servicesTypeHandling.ControllerV1_ServicesHandling;
+import com.nu.art.cyborg.demo.ui.controllers.systemOverlay.Controller_SystemOverlay;
 import com.nu.art.cyborg.demo.ui.controllers.transitionAnimation.ControllerV1_TransitionAnimationBegin;
 import com.nu.art.cyborg.logcat.ui.Controller_LogcatViewer;
 
@@ -46,6 +49,9 @@ import com.nu.art.cyborg.logcat.ui.Controller_LogcatViewer;
  * A list of examples and their layouts provided in this demo project.
  */
 public enum Example {
+	ScreenOrientation(R.string.ExampleLabel_ScreenOrientation, Controller_ScreenOrientation.class),
+	SystemOverlay(R.string.ExampleLabel_SystemOverlay, Controller_SystemOverlay.class),
+	SystemVolume(R.string.ExampleLabel_SystemVolume, Controller_SystemVolume.class),
 	FileLogger(R.string.ExampleLabel_FileLogger, Controller_FileLogger.class),
 	LiveModule(R.string.ExampleLabel_LiveModule, Controller_LiveModule.class),
 	Material(R.string.ExampleLabel_Material, Controller_Material.class),

@@ -41,6 +41,9 @@
     <string name="ExampleLabel_Material">Material</string>
     <string name="ExampleLabel_LiveModule">Live Module</string>
     <string name="ExampleLabel_FileLogger">File Logger</string>
+    <string name="ExampleLabel_SystemVolume">System Volume</string>
+    <string name="ExampleLabel_SystemOverlay">System Overlay</string>
+    <string name="ExampleLabel_ScreenOrientation">Screen Orientation</string>
     <string name="ServiceName_Foreground">Foreground Service</string>
     <string name="ServiceName_Sticky">Sticky Service</string>
     <string name="ExampleLabel_Payment">Payment</string>
