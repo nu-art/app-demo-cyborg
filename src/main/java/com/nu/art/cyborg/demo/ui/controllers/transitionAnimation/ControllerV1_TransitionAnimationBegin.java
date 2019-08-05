@@ -51,23 +51,23 @@ public class ControllerV1_TransitionAnimationBegin
 	@Override
 	@SuppressWarnings("unchecked")
 	public void onClick(View v) {
-//		FloatingViewTransitionAnimator floatingAnimation;
-//		PredefinedStackTransitionAnimator transition;
-//		//		LeadingViewAnimationBuilder leadingViewAnimation;
-//		switch (v.getId()) {
-//			case R.id.imageView:
-//				floatingAnimation = new FloatingViewTransitionAnimator(R.id.imageView, R.id.imageView);
-//				transition = new PredefinedStackTransitionAnimator(getActivity(), PredefinedTransitions.Slide, BaseTransition.ORIENTATION_HORIZONTAL, true);
-//				break;
-//
-//			case R.id.textView4:
-//				floatingAnimation = new FloatingViewTransitionAnimator(R.id.textView4, R.id.textView4);
-//				transition = new PredefinedStackTransitionAnimator(getActivity(), PredefinedTransitions.Cube, BaseTransition.ORIENTATION_HORIZONTAL, true);
-//				break;
-//
-//			default:
-//				return;
-//		}
+		//		FloatingViewTransitionAnimator floatingAnimation;
+		//		PredefinedStackTransitionAnimator transition;
+		//		//		LeadingViewAnimationBuilder leadingViewAnimation;
+		//		switch (v.getId()) {
+		//			case R.id.imageView:
+		//				floatingAnimation = new FloatingViewTransitionAnimator(R.id.imageView, R.id.imageView);
+		//				transition = new PredefinedStackTransitionAnimator(getActivity(), PredefinedTransitions.Slide, BaseTransition.ORIENTATION_HORIZONTAL, true);
+		//				break;
+		//
+		//			case R.id.textView4:
+		//				floatingAnimation = new FloatingViewTransitionAnimator(R.id.textView4, R.id.textView4);
+		//				transition = new PredefinedStackTransitionAnimator(getActivity(), PredefinedTransitions.Cube, BaseTransition.ORIENTATION_HORIZONTAL, true);
+		//				break;
+		//
+		//			default:
+		//				return;
+		//		}
 
 		StackLayerBuilder layerBuilder = createLayerBuilder();
 		layerBuilder.setTransitions(StackTransitions.Slide);

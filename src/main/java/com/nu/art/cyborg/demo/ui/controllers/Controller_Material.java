@@ -23,6 +23,6 @@ public class Controller_Material
 	extends CyborgController {
 
 	public Controller_Material() {
-		super(R.layout. controller__material);
+		super(R.layout.controller__material);
 	}
 }

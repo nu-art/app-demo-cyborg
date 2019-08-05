@@ -55,7 +55,7 @@ public class ControllerV1_Recycler
 	                listeners = {ViewListener.OnRecyclerItemClicked})
 	private CyborgRecycler recycler;
 
-	@ViewIdentifier(viewId ={
+	@ViewIdentifier(viewId = {
 		R.id.OrientationToggle,
 		R.id.IncrementColumn,
 		R.id.DecrementColumn

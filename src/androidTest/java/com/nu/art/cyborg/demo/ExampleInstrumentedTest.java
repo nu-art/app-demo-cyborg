@@ -26,7 +26,7 @@ public class ExampleInstrumentedTest
 		AutomationManager automationManager = new AutomationManager();
 		automationManager.init();
 		AutomationScenario scenario = new AutomationScenario();
-//		scenario.addStep_viaCode(new Action_StartActivity().setActivityName(ApplicationLauncher.class.getName()));
+		//		scenario.addStep_viaCode(new Action_StartActivity().setActivityName(ApplicationLauncher.class.getName()));
 		scenario.addStep_viaCode(new Action_Delay((100 * DateTimeTools.Second)));
 		automationManager.executeScenario(scenario);
 		logInfo("Started!");

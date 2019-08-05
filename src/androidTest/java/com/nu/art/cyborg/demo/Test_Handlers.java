@@ -72,12 +72,12 @@ public class Test_Handlers
 		}
 
 		Runnable runnable1 = new LogRunnable("Runnable-1");
-//		Runnable runnable2 = new LogRunnable("Runnable-2");
+		//		Runnable runnable2 = new LogRunnable("Runnable-2");
 
 		handler = getModule(ThreadsModule.class).getDefaultHandler("test-handler");
 
 		handler.post(runnable1);
-//		handler.postDelayed(runnable2, 100);
+		//		handler.postDelayed(runnable2, 100);
 		try {
 			Thread.sleep(400);
 		} catch (InterruptedException e) {

@@ -31,7 +31,8 @@ public final class MyStorageModule
 	public enum CyborgDemoPreferences {
 		Persistent("STAM"),
 		Private("Harti"),
-		OtherStuff("Barti"),;
+		OtherStuff("Barti"),
+		;
 
 		public final String storageGroup;
 
