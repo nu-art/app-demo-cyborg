@@ -5,7 +5,7 @@
  * In order to use this code you MUST have a proper license.
  * In order to obtain a licence please contact me directly.
  *
- * Email: Adam.Zehavi@Nu-Art-Software.com
+ * Email: adam.vdk@nu-art-software.com
  */
 
 package com.nu.art.cyborg.demo.ui.controllers.transitionAnimation;
@@ -73,7 +73,7 @@ public class ControllerV1_TransitionAnimationBegin
 		layerBuilder.setTransitions(StackTransitions.Slide);
 		layerBuilder.setTransitionDuration(1500);
 		layerBuilder.setControllerType(ControllerV1_TransitionAnimationEnd.class);
-		layerBuilder.build();
+		layerBuilder.push();
 	}
 
 	public RatingBar getRatingBar() {

@@ -113,7 +113,7 @@ public class Controller_StackTest
 							     controller_stackItem.label.setText(Arrays.toString(stack.getViewsTags()));
 						     }
 					     })
-					     .build();
+					     .push();
 				}
 			});
 		}
@@ -136,7 +136,7 @@ public class Controller_StackTest
 				     controller_stackItem.label.setText(stackTransitions.name());
 			     }
 		     })
-		     .build();
+		     .push();
 	}
 
 	private void multiTransitions() {
@@ -157,6 +157,6 @@ public class Controller_StackTest
 				     controller_stackItem.label.setText(stackTransitions1.name() + " && " + stackTransitions2);
 			     }
 		     })
-		     .build();
+		     .push();
 	}
 }

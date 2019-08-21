@@ -5,7 +5,7 @@
  * In order to use this code you MUST have a proper license.
  * In order to obtain a licence please contact me directly.
  *
- * Email: Adam.Zehavi@Nu-Art-Software.com
+ * Email: adam.vdk@nu-art-software.com
  */
 
 package com.nu.art.cyborg.demo.ui.controllers.examplesSelection;
@@ -56,7 +56,7 @@ public class ControllerV1_ExamplesSelection
 	@Override
 	public void onRecyclerItemClicked(Object clickedItem, RecyclerView parentView, View view, int position) {
 		Example example = (Example) clickedItem;
-		createLayerBuilder().setTransitions(StackTransitions.CubeT2B).setControllerType(example.getControllerType()).build();
+		createLayerBuilder().setTransitions(StackTransitions.CubeT2B).setControllerType(example.getControllerType()).push();
 	}
 
 	@ItemType(type = Example.class)

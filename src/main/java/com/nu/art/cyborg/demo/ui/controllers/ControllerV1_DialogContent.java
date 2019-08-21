@@ -5,7 +5,7 @@
  * In order to use this code you MUST have a proper license.
  * In order to obtain a licence please contact me directly.
  *
- * Email: Adam.Zehavi@Nu-Art-Software.com
+ * Email: adam.vdk@nu-art-software.com
  */
 
 package com.nu.art.cyborg.demo.ui.controllers;
@@ -38,7 +38,7 @@ public class ControllerV1_DialogContent
 	public void onClick(View v) {
 		switch (v.getId()) {
 			case R.id.BTN_ShowDialog:
-				createLayerBuilder().setControllerType(ControllerV1_Dialog.class).setKeepBackground(true).build();
+				createLayerBuilder().setControllerType(ControllerV1_Dialog.class).setKeepBackground(true).push();
 				break;
 		}
 	}
