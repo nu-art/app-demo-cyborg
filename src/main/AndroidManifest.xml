@@ -38,27 +38,11 @@
             android:value="AIzaSyBQDmYD6Eyth8wCiYDtAqLGL2rmxr_hnXc"
             />
 
-        <receiver android:name="com.nu.art.cyborg.modules.apps.AppsStatusReceiver">
-            <intent-filter>
-                <action android:name="android.intent.action.PACKAGE_FULLY_REMOVED"/>
-                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
-                <action android:name="android.intent.action.PACKAGE_ADDED"/>
-                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
-                <action android:name="android.intent.action.PACKAGE_DATA_CLEARED"/>
-                <action android:name="android.intent.action.PACKAGE_FIRST_LAUNCH"/>
-                <action android:name="android.intent.action.PACKAGE_RESTARTED"/>
-
-                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
-                <action android:name="android.intent.action.PACKAGE_CHANGED"/>
-                <action android:name="android.intent.action.PACKAGES_SUSPENDED"/>
-                <action android:name="android.intent.action.PACKAGES_UNSUSPENDED"/>
-
-                <action android:name="android.intent.action.PACKAGE_NEEDS_VERIFICATION"/>
-                <action android:name="android.intent.action.PACKAGE_VERIFIED"/>
-
-                <data android:scheme="package"/>
-            </intent-filter>
-        </receiver>
+        <receiver
+            android:name="com.nu.art.cyborg.modules.apps.AppsStatusReceiver"
+            android:enabled="true"
+            tools:replace="android:enabled"
+            />
 
         <service android:name=".ui.controllers.servicesTypeHandling.ServiceV1_Sticky"/>
         <service android:name=".ui.controllers.servicesTypeHandling.ServiceV1_Foreground"/>
