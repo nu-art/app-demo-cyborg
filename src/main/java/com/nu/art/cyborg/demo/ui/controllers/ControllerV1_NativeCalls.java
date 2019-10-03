@@ -96,7 +96,7 @@ public class ControllerV1_NativeCalls
 		TextView exampleLabel;
 
 		public NativeCallRenderer() {
-			super(R.layout.list_node__recycler_example_double);
+			super(R.layout.renderer__example_double);
 		}
 
 		@Override

@@ -126,7 +126,7 @@ public class ControllerV1_Contacts
 		TextView exampleLabel;
 
 		public Renderer_Contact() {
-			super(R.layout.list_node__recycler_example_double);
+			super(R.layout.renderer__example_double);
 		}
 
 		@Override

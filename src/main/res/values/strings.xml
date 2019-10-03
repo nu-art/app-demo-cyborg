@@ -44,6 +44,7 @@
     <string name="ExampleLabel_SystemVolume">System Volume</string>
     <string name="ExampleLabel_SystemOverlay">System Overlay</string>
     <string name="ExampleLabel_ScreenOrientation">Screen Orientation</string>
+    <string name="ExampleLabel_WifiExample">Wifi Example</string>
     <string name="ServiceName_Foreground">Foreground Service</string>
     <string name="ServiceName_Sticky">Sticky Service</string>
     <string name="ExampleLabel_Payment">Payment</string>

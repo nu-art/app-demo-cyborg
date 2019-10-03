@@ -179,7 +179,7 @@ public class ControllerV1_ServicesHandling
 		TextView serviceType;
 
 		public ServiceTypeRenderer() {
-			super(R.layout.list_node__recycler_service_type);
+			super(R.layout.renderer__service_type);
 		}
 
 		@Override
@@ -195,7 +195,7 @@ public class ControllerV1_ServicesHandling
 		TextView connectionId;
 
 		public ServiceConnectionRenderer() {
-			super(R.layout.list_node__recycler_service_connection);
+			super(R.layout.renderer__service_connection);
 		}
 
 		@Override

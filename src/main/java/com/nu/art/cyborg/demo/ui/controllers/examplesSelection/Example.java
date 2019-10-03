@@ -21,6 +21,7 @@ import com.nu.art.cyborg.demo.ui.controllers.ControllerV1_Fingerprint;
 import com.nu.art.cyborg.demo.ui.controllers.ControllerV1_GoogleMaps;
 import com.nu.art.cyborg.demo.ui.controllers.ControllerV1_HttpTransactions;
 import com.nu.art.cyborg.demo.ui.controllers.ControllerV1_InternetConnection;
+import com.nu.art.cyborg.demo.ui.controllers.ControllerV1_WifiExample;
 import com.nu.art.cyborg.demo.ui.controllers.Controller_FileLogger;
 import com.nu.art.cyborg.demo.ui.controllers.Controller_Material;
 import com.nu.art.cyborg.demo.ui.controllers.ControllerV1_MediaTester;
@@ -49,6 +50,7 @@ import com.nu.art.cyborg.logcat.ui.Controller_LogcatViewer;
  * A list of examples and their layouts provided in this demo project.
  */
 public enum Example {
+	WifiExample(R.string.ExampleLabel_WifiExample, ControllerV1_WifiExample.class),
 	ScreenOrientation(R.string.ExampleLabel_ScreenOrientation, Controller_ScreenOrientation.class),
 	SystemOverlay(R.string.ExampleLabel_SystemOverlay, Controller_SystemOverlay.class),
 	SystemVolume(R.string.ExampleLabel_SystemVolume, Controller_SystemVolume.class),

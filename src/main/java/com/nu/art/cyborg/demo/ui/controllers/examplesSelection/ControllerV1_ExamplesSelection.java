@@ -67,7 +67,7 @@ public class ControllerV1_ExamplesSelection
 		TextView exampleLabel;
 
 		public ExampleRenderer() {
-			super(R.layout.list_node__example);
+			super(R.layout.renderer__example);
 		}
 
 		@Override

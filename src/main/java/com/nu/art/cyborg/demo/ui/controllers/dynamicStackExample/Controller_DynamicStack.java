@@ -176,7 +176,7 @@ public class Controller_DynamicStack
 		TextView exampleLabel;
 
 		private AnimationItemRenderer() {
-			super(R.layout.list_node__recycler_example_double);
+			super(R.layout.renderer__example_double);
 		}
 
 		@Override

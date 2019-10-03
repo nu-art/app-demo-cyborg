@@ -164,7 +164,7 @@ public class ControllerV1_Recycler
 		TextView exampleLabel;
 
 		public FloatRenderer() {
-			super(R.layout.list_node__recycler_example_float);
+			super(R.layout.renderer__example_float);
 		}
 
 		@Override
@@ -180,7 +180,7 @@ public class ControllerV1_Recycler
 		TextView exampleLabel;
 
 		public DoubleRenderer() {
-			super(R.layout.list_node__recycler_example_double);
+			super(R.layout.renderer__example_double);
 		}
 
 		@Override
@@ -196,7 +196,7 @@ public class ControllerV1_Recycler
 		TextView exampleLabel;
 
 		public IntegerRenderer() {
-			super(R.layout.list_node__recycler_example_int);
+			super(R.layout.renderer__example_int);
 		}
 
 		@Override

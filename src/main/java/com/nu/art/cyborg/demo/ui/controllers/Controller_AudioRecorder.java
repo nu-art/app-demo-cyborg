@@ -158,7 +158,7 @@ public class Controller_AudioRecorder
 		TextView name;
 
 		protected Renderer_SourceType() {
-			super(R.layout.list_node__example);
+			super(R.layout.renderer__example);
 		}
 
 		@Override

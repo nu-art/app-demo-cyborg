@@ -28,6 +28,7 @@ import com.nu.art.cyborg.modules.LocationModule;
 import com.nu.art.cyborg.modules.apps.AppsStatusModule;
 import com.nu.art.cyborg.modules.calls.NativeCallsModule;
 import com.nu.art.cyborg.modules.camera.CameraModule;
+import com.nu.art.cyborg.modules.wifi.WifiModule;
 import com.nu.art.cyborg.stt.STT_Google;
 import com.nu.art.http.HttpModule;
 import com.nu.art.modular.core.ModulesPack;
@@ -60,6 +61,7 @@ public class MyModulePack
 		AppsStatusModule.class,
 		SystemOverlayModule.class,
 		Module_LogcatViewer.class,
+		WifiModule.class,
 	};
 
 	private MyModulePack() {

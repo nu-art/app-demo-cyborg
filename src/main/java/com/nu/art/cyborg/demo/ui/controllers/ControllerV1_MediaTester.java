@@ -338,7 +338,7 @@ public class ControllerV1_MediaTester
 		TextView name;
 
 		protected Renderer_Interpolator() {
-			super(R.layout.list_node__example);
+			super(R.layout.renderer__example);
 		}
 
 		@Override
@@ -355,7 +355,7 @@ public class ControllerV1_MediaTester
 		TextView name;
 
 		protected Renderer_MediaStream() {
-			super(R.layout.list_node__example);
+			super(R.layout.renderer__example);
 		}
 
 		@Override
