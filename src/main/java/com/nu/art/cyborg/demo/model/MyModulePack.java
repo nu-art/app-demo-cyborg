@@ -10,11 +10,10 @@
 
 package com.nu.art.cyborg.demo.model;
 
-import com.nu.art.belog.BeLogged;
-import com.nu.art.belog.loggers.FileLogger;
-import com.nu.art.core.tools.SizeTools;
+import android.os.Process;
+
+import com.nu.art.core.generics.Processor;
 import com.nu.art.cyborg.automation.AutomationModule;
-import com.nu.art.cyborg.core.CyborgBuilder;
 import com.nu.art.cyborg.core.modules.ABTestingModule;
 import com.nu.art.cyborg.core.modules.SystemOverlayModule;
 import com.nu.art.cyborg.demo.ui.controllers.servicesTypeHandling.ServicesModule;
@@ -32,8 +31,6 @@ import com.nu.art.cyborg.modules.wifi.WifiModule;
 import com.nu.art.cyborg.stt.STT_Google;
 import com.nu.art.http.HttpModule;
 import com.nu.art.modular.core.ModulesPack;
-
-import java.io.File;
 
 /**
  * Created by TacB0sS on 18-Apr 2015.
@@ -75,7 +72,12 @@ public class MyModulePack
 		//		CyborgStackController.DebugFlag.enable();
 		//		getModule(CyborgAudioRecorder.class).DebugFlag.enable();
 		//		getModule(AutomationModule.class).DebugFlag.enable();
-
+		getModule(HttpModule.class).DefaultExecutionPool.setThreadInitiator(new Processor<Thread>() {
+			@Override
+			public void process(Thread thread) {
+				Process.setThreadPriority((int) thread.getId(), Process.THREAD_PRIORITY_BACKGROUND);
+			}
+		});
 		// You can get any module declared in the constructor and PRE-CONFIGURE it before it is initialized.
 		getModule(MyModule.class).addString("0");
 		//		getModule(STT_Google.class).setCredentialsGetter(new Getter<GoogleCredentials>() {
