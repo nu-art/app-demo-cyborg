@@ -1,5 +1,3 @@
-
-
 applyAndroidApplication("com.nu.art.cyborg.demo", "cyborg-demo")
 
 android {
@@ -10,6 +8,8 @@ android {
 
 dependencies {
     implementation(resolveDependency('cyborg-core', 'com.nu-art-software.cyborg', "${NU_ART_VERSION}"))
+    implementation "com.google.dagger:dagger:${DAGGER_VERSION}"
+    annotationProcessor "com.google.dagger:dagger-compiler:${DAGGER_VERSION}"
 
     implementation(project(':payment-stripe'))
     implementation project(':cyborg-maps')

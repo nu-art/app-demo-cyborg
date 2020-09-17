@@ -5,6 +5,9 @@ package com.nu.art.cyborg.demo.model;
 import com.nu.art.core.generics.Processor;
 import com.nu.art.cyborg.annotations.ModuleDescriptor;
 import com.nu.art.cyborg.core.CyborgModule;
+//import com.nu.art.cyborg.demo.test.DaggerComponent;
+import com.nu.art.cyborg.demo.test.DaggerComponent;
+import com.nu.art.cyborg.demo.test.MyClass;
 import com.nu.art.cyborg.demo.ui.controllers.ControllerV1_MediaTester.MediaStream;
 import com.nu.art.cyborg.demo.ui.controllers.customAttributeExample.AttributeSetterV1_CustomValue;
 import com.nu.art.cyborg.media.CyborgMediaPlayer;
@@ -34,6 +37,9 @@ public class MyModule
 		streams.add(new MediaStream("Good Bad Ugly", "https://www.myinstants.com/media/sounds/goodbadugly-whistle-long.mp3"));
 		streams.add(new MediaStream("Ghost Busters", "https://www.myinstants.com/media/sounds/ghostbusters_2.mp3"));
 		streams.add(new MediaStream("Can't Touch This", "https://www.myinstants.com/media/sounds/mc-hammer-u-cant-touch-this.mp3"));
+
+		MyClass myClass = DaggerComponent.create().get();
+		myClass.init();
 	}
 
 	public String getString(int index) {
