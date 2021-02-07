@@ -54,6 +54,7 @@ public class Controller_StackTest
 	@ViewIdentifier(
 		viewId = {
 			R.id.Bug1,
+			R.id.Bug2,
 			R.id.MultiTransitions,
 			R.id.AddLayerDontKeepInStack,
 			R.id.AddLayerKeepBackground,
@@ -73,6 +74,9 @@ public class Controller_StackTest
 		switch (v.getId()) {
 			case R.id.Bug1:
 				bug1();
+				return;
+			case R.id.Bug2:
+				bug2();
 				return;
 			case R.id.MultiTransitions:
 				multiTransitions();
@@ -119,6 +123,28 @@ public class Controller_StackTest
 		}
 	}
 
+	private void bug2() {
+		for (int i = 0; i < 4; i++) {
+			final int k = layerIndex++;
+			stack.createLayerBuilder()
+			     .setStateTag("Layer-" + k)
+			     .setKeepBackground(false)
+			     .setKeepInStack(false)
+			     .setTransitions(StackTransitions.Fade)
+			     .setControllerType(Controller_StackItem.class)
+			     .setProcessor(new Processor<Controller_StackItem>() {
+				     int color = getColor(colors[k % colors.length]);
+
+				     @Override
+				     public void process(Controller_StackItem controller_stackItem) {
+					     controller_stackItem.getRootView().setBackgroundColor(color);
+					     controller_stackItem.label.setText(Arrays.toString(stack.getViewsTags()));
+				     }
+			     })
+			     .push();
+		}
+	}
+
 	private void bug1() {
 		final StackTransitions stackTransitions = nextRandom(StackTransitions.values());
 		stack.createLayerBuilder()
@@ -137,6 +163,16 @@ public class Controller_StackTest
 			     }
 		     })
 		     .push();
+	}
+
+	@Override
+	protected void onResume() {
+		CyborgStackController.DebugFlag.enable();
+	}
+
+	@Override
+	protected void onDestroy() {
+		CyborgStackController.DebugFlag.disable();
 	}
 
 	private void multiTransitions() {
